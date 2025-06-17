@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Downloads</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind Output -->
+    <link href="{{ url_for('static', filename='css/output.css') }}" rel="stylesheet" />
+
+    <!-- Font + Color Overrides -->
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+
+      .custom-heading {
+        color: #1a1a1a;
+        font-weight: 600;
+        font-size: 2.25rem; /* Equivalent to Tailwind's text-4xl */
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .custom-subtext {
+        color: #4a4a4a;
+      }
+
+      .custom-button {
+        background-color: #4b0082;
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        display: inline-block;
+        transition: background-color 0.2s;
+      }
+
+      .custom-button:hover {
+        background-color: #3a0066;
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 1rem;
+        padding: 1.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.2s;
+        margin-bottom: 1rem;
+      }
+
+      .card:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      }
+    </style>
+  </head>
+  <body class="bg-gradient-to-br from-[#e0e7ff] to-[#bfdbfe] min-h-screen flex items-center justify-center p-6">
+    <div class="w-full max-w-xl flex flex-col items-center justify-center">
+      <h1 class="custom-heading">Downloads</h1>
+
+      <div class="card">
+        <h2 class="custom-subtext">Jobless Reincarnation</h2>
+        <p class="custom-subtext">full series</p>
+        <a href="/download" class="custom-button mt-2">Download</a>
+      </div>
+
+      <div class="card">
+        <h2 class="custom-subtext">Rezero</h2>
+        <p class="custom-subtext">full series</p>
+        <a href="/download" class="custom-button mt-2">Download</a>
+      </div>
+    </div>
+  </body>
+</html>
